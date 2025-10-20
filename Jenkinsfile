@@ -1,9 +1,9 @@
 pipeline {
   agent any
   environment {
-  # ubah 'rifkilaroyba/komputasi' dengan nama kamu dan repo proyek kamu
+
     IMAGE_NAME = 'rifkilaroyba/komputasi'
-  # ubah 'dockerhub-credentials' dengan credential yang sudah kamu buat 
+   
     REGISTRY_CREDENTIALS = 'dockerhub-credentials'
   }
   stages {
@@ -33,4 +33,5 @@ pipeline {
       }
     }
   }
+
 }
